@@ -15,7 +15,7 @@ const Display = ({ audioClips, setAudioText, volume }) => {
         /**changeAudioText(audioClips.find(audioClip => 
                 audioClip.key == key).text); 
                 */    
-            setAudioText(audioClips.find((audioClip) => audioClip.key.toUpperCase() == key).text);
+            setAudioText(audioClips.find((audioClip) => audioClip.key.toUpperCase() === key).text);
         };
         };
 
@@ -32,7 +32,7 @@ const Display = ({ audioClips, setAudioText, volume }) => {
             /**changeAudioText(audioClips.find(audioClip => 
                     audioClip.key == key).text); 
                     */    
-                setAudioText(audioClips.find((audioClip) => audioClip.key.toUpperCase() == key).text);
+                setAudioText(audioClips.find((audioClip) => audioClip.key.toUpperCase() === key).text);
             };
             };
         useEffect(()=> {
