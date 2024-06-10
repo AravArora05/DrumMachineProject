@@ -41,7 +41,7 @@ const Display = ({ audioClips, setAudioText, volume }) => {
             return ()=> {
                 document.removeEventListener("keydown", findKey);
             }
-        }, []);
+        }, [findKey]);
 
         
     return (
